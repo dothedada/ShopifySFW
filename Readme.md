@@ -2,14 +2,18 @@
 
 ## Test solution route
 
-- [ ] Setup the work environment
-  - [ ] Webpack
-  - [ ] Sass
+- [-] Setup the work environment
+  - [-] Webpack
+  - [-] Sass
 - [ ] Make the controllers
   - [ ] fetch data
   - [ ] Make data usable
+- [ ] create style base
+  - [ ] add the reset style
+  - [ ] setup the vars
 - [ ] Make the views
   - [ ] components
+    - [ ] make the js flow and interactions
     - [ ] Menu
     - [ ] marquees
     - [ ] hero
