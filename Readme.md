@@ -8,9 +8,10 @@
 - [ ] Make the controllers
   - [ ] fetch data
   - [ ] Make data usable
-- [ ] create style base
-  - [ ] add the reset style
-  - [ ] setup the vars
+- [-] create style base
+  - [-] add the reset style
+  - [-] setup the vars
+  - [-] Download the other assets (Fonts, icons, ...)
 - [ ] Make the views
   - [ ] components
     - [ ] make the js flow and interactions
