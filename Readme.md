@@ -5,20 +5,22 @@
 - [-] Setup the work environment
   - [-] Webpack
   - [-] Sass
-- [ ] Make the controllers
-  - [ ] fetch data
-  - [ ] Make data usable
 - [-] create style base
   - [-] add the reset style
   - [-] setup the vars
   - [-] Download the other assets (Fonts, icons, ...)
+- [ ] link settings with components
+  - [ ] Make data usable
 - [ ] Make the views
   - [ ] components
-    - [ ] make the js flow and interactions
     - [ ] Menu
+      - [ ] JS assembly
     - [ ] marquees
+      - [ ] JS assembly
     - [ ] hero
     - [ ] cards
+    - [ ] product carrousel
+      - [ ] JS assembly
     - [ ] product detail
   - [ ] Section
     - [ ] header
