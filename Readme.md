@@ -1,5 +1,29 @@
 # Shopify Simulator Documentation
 
+## Test solution route
+
+- [ ] Setup the work environment
+  - [ ] Webpack
+  - [ ] Sass
+- [ ] Make the controllers
+  - [ ] fetch data
+  - [ ] Make data usable
+- [ ] Make the views
+  - [ ] components
+    - [ ] Menu
+    - [ ] marquees
+    - [ ] hero
+    - [ ] cards
+    - [ ] product detail
+  - [ ] Section
+    - [ ] header
+    - [ ] products
+    - [ ] collections
+    - [ ] footer
+- [ ] landing
+
+## Original data
+
 Welcome to **Shopify Simulator**, a lightweight environment designed to help developers explore Shopify's Liquid templating language and dynamic section-based architecture. This project simulates Shopify's core functionalities, enabling developers to practice creating reusable components, iterating through data, and working with dynamic settings.
 
 ---
