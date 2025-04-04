@@ -32,6 +32,13 @@ module.exports = (_, argv) => {
                         filename: 'images/[name][ext]',
                     },
                 },
+                {
+                    test: /\.(otf|ttf|woff2?)$/i,
+                    type: 'asset/resource',
+                    generator: {
+                        filename: 'fonts/[name][ext]',
+                    },
+                },
             ],
         },
         plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],

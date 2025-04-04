@@ -1,2 +1,8 @@
-$primary-color: #ff0000;
-$font-stack: Arial, sans-serif;
+@use 'fonts' as *;
+
+$font-p: 'Aeonik TRIAL', system-ui;
+$font-heading: 'Countach', system-ui;
+
+$background-color: rgb(23, 23, 23);
+
+$text-color: #fff;
