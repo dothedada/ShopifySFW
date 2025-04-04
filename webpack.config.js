@@ -20,7 +20,7 @@ module.exports = (_, argv) => {
                 {
                     test: /\.s?css$/,
                     use: [
-                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                        MiniCssExtractPlugin.loader,
                         'css-loader',
                         'sass-loader',
                     ],
@@ -37,10 +37,7 @@ module.exports = (_, argv) => {
         plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],
 
         optimization: devMode
-            ? {
-                  runtimeChunk: 'single',
-                  moduleIds: 'named',
-              }
+            ? {}
             : {
                   minimize: true,
                   minimizer: [
@@ -53,6 +50,8 @@ module.exports = (_, argv) => {
                       }),
                       new CssMinimizerPlugin(),
                   ],
+                  sideEffects: true,
+                  usedExports: true,
               },
         mode: devMode ? 'development' : 'production',
     };
