@@ -25,6 +25,7 @@
         "liquidjs": "^10.20.1"
     },
     "devDependencies": {
+        "copy-webpack-plugin": "^13.0.0",
         "css-loader": "^6.7.3",
         "css-minimizer-webpack-plugin": "^7.0.2",
         "mini-css-extract-plugin": "^2.9.2",

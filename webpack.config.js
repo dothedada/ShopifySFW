@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -26,7 +27,7 @@ module.exports = (_, argv) => {
                     ],
                 },
                 {
-                    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                    test: /\.(png|svg|jpg|jpeg|gif|avif)$/i,
                     type: 'asset/resource',
                     generator: {
                         filename: 'images/[name][ext]',
@@ -41,7 +42,22 @@ module.exports = (_, argv) => {
                 },
             ],
         },
-        plugins: [new MiniCssExtractPlugin({ filename: 'styles.css' })],
+        plugins: [
+            new MiniCssExtractPlugin({ filename: 'styles.css' }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: 'assets/images',
+                        to: 'images',
+                        filter: (resourcePath) => {
+                            return /\.(png|svg|jpg|jpeg|gif|webp|avif)$/i.test(
+                                resourcePath,
+                            );
+                        },
+                    },
+                ],
+            }),
+        ],
 
         optimization: devMode
             ? {}
