@@ -1,35 +1,27 @@
-{% assign from = settings['hero-banner'].settings %}
+<header class='header'>
+    <button type='button' class='header__hamburguer'>
+        <span class='sr-only'>Open menu</span>
+        open menu
+    </button>
 
-<header class="header">
-	<div class="header__marquee ">
-		{% render 'marquee', text: from.marquee_top_text %}
-	</div>
+    <div class='header__logo'>
+        <span class='sr-only'>Shuffle Store</span>
+        Shuffle Store
+    </div>
 
-	<div class="header__menu">
-		<button type="button" class="menu__btn-hamburguer">
-			<span class="sr-only">Open menu</span>
-		</button>
+    <div class='header__payment-methods'>
+        {% include 'payment-methods.liquid' %}
+    </div>
 
-		<span class="menu__logo"></span>
-		<span class="menu__payment-methods"></span>
-		<nav class="menu__elements">
-			<ul>
-				<li><a href="#">All Products</a></li>
-				<li><a href="#">Collections</a></li>
-			</ul>
-		</nav>
+    <nav class='header__menu'>
+        <ul>
+            <li><a href='#'>All Products</a></li>
+            <li><a href='#'>Collections</a></li>
+        </ul>
+    </nav>
 
-		<button type="button" class="menu__btn-cart"></button>
-	</div>
-
-	<div class="hero">
-		<img clas="hero__img" src="{{from.background_image}}" alt="{{from.background_image_alt}}" />
-		<a clas="hero__btn" href="{{from.button_link}}">
-			{{ from.button_text}}
-		</a>
-	</div>
-
-	<div class="header__marquee header__marquee--big">
-		{% render 'marquee', text: from.marquee_bottom_text %}
-	</div>
+    <button type='button' class='header__cart'>
+        <span class='sr-only'>Open my shopping cart</span>
+        cart
+    </button>
 </header>

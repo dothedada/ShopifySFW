@@ -1,11 +1,11 @@
-<div class="product-card">
-  <h3>{{ product.title }}</h3>
-  <p>Price: ${{ product.price }}</p>
-  {% if product.tags %}
-    <ul>
-      {% for tag in product.tags %}
-        <li>{{ tag }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+<div class='product-card'>
+    <h3>{{ product.title }}</h3>
+    <p>Price: ${{ product.price }}</p>
+    {% if product.tags %}
+        <ul>
+            {% for tag in product.tags %}
+                <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 </div>
