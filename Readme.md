@@ -9,25 +9,46 @@
   - [-] add the reset style
   - [-] setup the vars
   - [-] Download the other assets (Fonts, icons, ...)
-- [ ] link settings with components
-  - [ ] Make data usable
 - [ ] Make the views
   - [ ] components
     - [ ] Menu
+      - [-] template
+      - [ ] css
       - [ ] JS assembly
     - [ ] marquees
+      - [-] template
+      - [ ] css
       - [ ] JS assembly
     - [ ] hero
-    - [ ] cards
+      - [-] template
+      - [ ] css
     - [ ] product carrousel
+      - [ ] template
+      - [ ] css
       - [ ] JS assembly
+      - [ ] cards
+        - [ ] template
+        - [ ] css
+        - [ ] JS assembly
     - [ ] product detail
+      - [ ] template
+      - [ ] css
+      - [ ] JS assembly
   - [ ] Section
     - [ ] header
+      - [ ] template
+      - [ ] css
     - [ ] products
+      - [ ] template
+      - [ ] css
     - [ ] collections
+      - [ ] template
+      - [ ] css
     - [ ] footer
-- [ ] landing
+      - [ ] template
+      - [ ] css
+- [ ] landing, final assembly
+- [ ] tests
 
 ## Original data
 
