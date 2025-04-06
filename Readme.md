@@ -2,53 +2,53 @@
 
 ## Test solution route
 
-- [-] Setup the work environment
-  - [-] Webpack
-  - [-] Sass
-- [-] create style base
-  - [-] add the reset style
-  - [-] setup the vars
-  - [-] Download the other assets (Fonts, icons, ...)
-- [ ] Make the views
-  - [ ] components
-    - [ ] Menu
-      - [-] template
-      - [ ] css
-      - [ ] JS assembly
-    - [ ] marquees
-      - [-] template
-      - [ ] css
-      - [ ] JS assembly
-    - [ ] hero
-      - [-] template
-      - [ ] css
-    - [ ] product carrousel
-      - [ ] template
-      - [ ] css
-      - [ ] JS assembly
-      - [ ] cards
-        - [ ] template
-        - [ ] css
-        - [ ] JS assembly
-    - [ ] product detail
-      - [ ] template
-      - [ ] css
-      - [ ] JS assembly
-  - [ ] Section
-    - [ ] header
-      - [ ] template
-      - [ ] css
-    - [ ] products
-      - [ ] template
-      - [ ] css
-    - [ ] collections
-      - [ ] template
-      - [ ] css
-    - [ ] footer
-      - [ ] template
-      - [ ] css
-- [ ] landing, final assembly
-- [ ] tests
+[x] Setup the work environment
+  [x] Webpack
+  [x] Sass
+[x] create style base
+  [x] add the reset style
+  [x] setup the vars
+  [x] Download the other assets (Fonts, icons, ...)
+[ ] Make the views
+  [ ] components
+    [ ] Menu
+      [x] template
+      [ ] css
+      [ ] JS assembly
+    [ ] marquees
+      [x] template
+      [ ] css
+      [ ] JS assembly
+    [ ] hero
+      [x] template
+      [ ] css
+    [ ] product carrousel
+      [x] template
+      [ ] css
+      [ ] JS assembly
+      [ ] cards
+        [x] template
+        [ ] css
+        [ ] JS assembly
+    [ ] product detail
+      [ ] template
+      [ ] css
+      [ ] JS assembly
+  [ ] Section
+    [ ] header
+      [ ] template
+      [ ] css
+    [ ] products
+      [ ] template
+      [ ] css
+    [ ] collections
+      [ ] template
+      [ ] css
+    [ ] footer
+      [ ] template
+      [ ] css
+[ ] landing, final assembly
+[ ] tests
 
 ## Original data
 

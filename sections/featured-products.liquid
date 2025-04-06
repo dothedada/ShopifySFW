@@ -1,8 +1,20 @@
-<section class='featured-products'>
-    <h2>{{ settings['featured-products'].settings.heading }}</h2>
-    <div class='product-list'>
-        {% for product in products %}
-            {% render 'product-card', product: product %}
-        {% endfor %}
+{% assign settings = settings['featured-products'].settings %}
+{% assign initial_prd = settings.initial_products %}
+
+<section class='featured'>
+    <h2 class='featured__title'>
+        {{ settings.heading }}
+    </h2>
+
+    <div class='featured__list'>
+        {% render 'product-loop', products: products, limit: initial_prd %}
     </div>
+
+    {% if products.size > initial_prd %}
+        <div class='featured__list hidden' id='products-extra'>
+            {% render 'product-loop', products: products, offset: initial_prd %}
+        </div>
+
+        <button class='featured__more-btn'>Ver más</button>
+    {% endif %}
 </section>

@@ -4,7 +4,8 @@
             "type": "featured-products",
             "settings": {
                 "heading": "Our Featured Products",
-                "background_color": "#ffffff"
+                "background_color": "#ffffff",
+                "initial_products": 4
             }
         },
         "hero-banner": {
@@ -35,4 +36,3 @@
         }
     }
 }
-
