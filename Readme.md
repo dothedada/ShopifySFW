@@ -36,16 +36,16 @@
       [ ] JS assembly
   [ ] Section
     [ ] header
-      [ ] template
+      [x] template
       [ ] css
     [ ] products
-      [ ] template
+      [x] template
       [ ] css
     [ ] collections
-      [ ] template
+      [x] template
       [ ] css
     [ ] footer
-      [ ] template
+      [x] template
       [ ] css
 [ ] landing, final assembly
 [ ] tests
