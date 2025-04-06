@@ -11,7 +11,7 @@
     backdrop-filter: blur(20px);
 
     &__wrapper {
-        max-width: 1360px;
+        max-width: var.$max-width;
         margin: 0 auto;
         padding: 0.75rem;
         display: flex;
@@ -136,7 +136,7 @@
         top: calc(100% + 2rem);
         left: 50%;
         transform: translate(-50%, 0);
-        border-radius: 5px;
+        border-radius: var.$round-corner;
         padding: 2rem 1rem;
         width: calc(100% - 2rem);
         height: 300px;

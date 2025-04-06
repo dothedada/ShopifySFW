@@ -1,9 +1,9 @@
-@use './../abstracts/variables' as *;
-@use './../abstracts/mixins' as *;
+@use './../abstracts/variables' as var;
+@use './../abstracts/mixins' as mix;
 
 body {
-    position: relative;
-    font-family: $font-p;
-    background-color: $background-color;
-    color: $text-color;
+    font-family: var.$font-p;
+    background-color: var.$background-color;
+    background-image: url('/images/bg-noise.webp');
+    color: var.$text-color;
 }

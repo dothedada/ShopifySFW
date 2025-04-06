@@ -11,12 +11,12 @@
         </div>
 
         {% render 'payment-methods.liquid',
-            class: 'header__payment-methods',
+            class: 'header__payment-methods header__payment-methods--hidden',
             text: menu.payment_text
         %}
 
         {% render 'links-list.liquid',
-            class: 'header__menu',
+            class: 'header__menu header__menu--hidden',
             linksList: menu.links,
             menuDescription: 'Main menu',
             case: 'unset'

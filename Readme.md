@@ -13,7 +13,7 @@
   - [ ] components
     - [ ] Menu
       - [x] template
-      - [ ] css
+      - [x] css
       - [ ] JS assembly
     - [ ] marquees
       - [x] template

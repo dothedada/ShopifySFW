@@ -4,6 +4,7 @@ $breakpoints: (
     'l': 1024px,
     'xl': 1280px,
 );
+$max-width: 1360px;
 
 $font-p: 'Aeonik TRIAL', system-ui;
 $font-heading: 'Countach', system-ui;
@@ -21,3 +22,4 @@ $font-size-hero-btn: 1.5rem;
 $font-size-marquee-s: $font-size-s;
 $font-marquee-b-mobile: 3.5rem;
 $font-marquee-b-desk: 5.5rem;
+$round-corner: 5px;

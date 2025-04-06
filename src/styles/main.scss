@@ -6,8 +6,10 @@
 @use 'abstracts/mixins' as *;
 
 @use 'base/font-settings';
+@use 'pages/home';
 
-@use 'snippets/payment-methods'; // @use 'pages/home';
-//
+@use 'snippets/payment-methods';
+
 @use 'blocks/top-bar';
 @use 'blocks/header';
+@use 'blocks/hero';
