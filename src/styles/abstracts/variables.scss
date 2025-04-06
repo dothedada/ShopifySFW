@@ -1,4 +1,9 @@
-@use 'fonts' as *;
+// because is a mobile-firts, there is no need for small screens specification
+$breakpoints: (
+    'm': 768px,
+    'l': 1024px,
+    'xl': 1280px,
+);
 
 $font-p: 'Aeonik TRIAL', system-ui;
 $font-heading: 'Countach', system-ui;

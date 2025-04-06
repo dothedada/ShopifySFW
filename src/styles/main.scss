@@ -1,10 +1,13 @@
-@use 'reset' as *;
-@use 'variables' as var;
+@use 'base/reset';
+@use 'base/accessible';
+@use 'base/typography';
 
-body {
-    font-family: var.$font-p;
-    background-color: var.$background-color;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+
+@use 'base/font-settings';
+
+// @use 'pages/home';
+//
+@use 'blocks/top-bar';
+@use 'blocks/header';
