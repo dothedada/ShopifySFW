@@ -1,0 +1,14 @@
+<nav aria-label='{{ menuDescription }}'>
+    <ul class='{{ class }}'>
+        {% for link in linksList %}
+            <li>
+                {% assign label = link.label %}
+                {% if case != 'unset' %}
+                    {% assign label = label | upcase %}
+                {% endif %}
+
+                <a href='{{ link.url }}'>{{ label }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

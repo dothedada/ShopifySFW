@@ -1,0 +1,46 @@
+{% assign footer = settings.footer.settings %}
+
+<footer class='footer'>
+    <div class='footer__store'>
+        <img src='' alt='Shuffle Store' class='footer__store-logo'>
+        <p>{{ footer.logo_text }}</p>
+    </div>
+
+    <div>
+        {% render 'links-list.liquid',
+            class: 'footer__links',
+            linksList: footer.links,
+            linksDescription: 'Site map'
+        %}
+
+        {% render 'links-list.liquid',
+            class: 'footer__tos',
+            linksList: footer['links-tos'],
+            linksDescription: 'Store policies'
+        %}
+
+        {% render 'payment-methods.liquid',
+            class: 'footer__payment',
+            text: footer.payment_text
+        %}
+    </div>
+
+    <div class='footer__contact'>
+        <form class='footer__newsletter'>
+            <label>
+                Subscribe and receive drop notifications
+                <input type='email'>
+            </label>
+            <button type='button'>
+                <span class='sr-only'>Subscribe</span>
+                subscribe
+            </button>
+        </form>
+
+        {% render 'links-list.liquid',
+            class: 'footer__socials',
+            linksList: footer.socials,
+            linksDescription: 'Socials'
+        %}
+    </div>
+</footer>

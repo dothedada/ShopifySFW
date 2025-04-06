@@ -1,5 +1,15 @@
 {
     "sections": {
+        "menu": {
+            "type": "menu",
+            "settings": {
+                "payment_text": "We Accept",
+                "links": [
+                    { "label": "All Products", "url": "/collections/all" },
+                    { "label": "Collections", "url": "/collections" }
+                ]
+            }
+        },
         "hero-banner": {
             "type": "hero-banner",
             "settings": {
@@ -8,7 +18,7 @@
                 "button_text": "Shop Now",
                 "button_link": "/collections/all",
                 "background_image": "/images/hero_banner_img.avif",
-                "background_image_alt": "Two very relax person wearing a shuffle shirt"
+                "background_image_alt": "Two very relaxed person wearing a shuffle shirt"
             }
         },
         "featured-products": {
@@ -30,14 +40,22 @@
             "type": "footer",
             "settings": {
                 "logo_text": "MyShopify",
+                "payment_text": "We accept all major cards, PayPal & crypto",
                 "links": [
                     { "label": "Home", "url": "/" },
                     { "label": "Cart", "url": "/cart" },
                     { "label": "All Products", "url": "/collections/all" },
-                    { "label": "Collections", "url": "/collections" },
+                    { "label": "Collections", "url": "/collections" }
+                ],
+                "links_tos": [
                     { "label": "Refund Policy", "url": "/refund-policy" },
                     { "label": "Privacy Policy", "url": "/privacy-policy" },
                     { "label": "Terms of Service", "url": "/terms-of-service" }
+                ],
+                "socials": [
+                    { "label": "Facebook", "url": "/refund-policy" },
+                    { "label": "X(Twitter)", "url": "/terms-of-service" },
+                    { "label": "Instagram", "url": "/privacy-policy" }
                 ]
             }
         }
