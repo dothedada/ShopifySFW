@@ -7,7 +7,7 @@
 
 @use 'base/font-settings';
 
-// @use 'pages/home';
+@use 'snippets/payment-methods'; // @use 'pages/home';
 //
 @use 'blocks/top-bar';
 @use 'blocks/header';

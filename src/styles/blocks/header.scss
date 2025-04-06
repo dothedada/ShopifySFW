@@ -1,3 +1,201 @@
+@use './../abstracts/variables' as var;
+@use './../abstracts/mixins' as mix;
+
 .header {
-    background-color: red;
+    position: fixed;
+    top: calc(0.8rem + 1rem);
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+
+    &__wrapper {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @include mix.screen(l) {
+            padding: 1rem 2rem;
+        }
+    }
+
+    &__hamburguer {
+        position: relative;
+        background: none;
+        border: none;
+
+        display: block;
+        width: 35px;
+        height: 48px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            left: calc((100% - 35px) / 2);
+            width: 35px;
+            left: 50%;
+            height: 3px;
+            background-color: var.$brand-color;
+            transition: transform 1s ease-in-out;
+        }
+
+        &::before {
+            transform: translate(-50%, -5px);
+        }
+
+        &::after {
+            transform: translate(-50%, 5px);
+        }
+
+        &--open {
+            &::before {
+                transform: translate(-50%, 0) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%, 0) rotate(-45deg);
+            }
+        }
+
+        @include mix.screen(l) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        flex: 1;
+        display: block;
+        height: 35px;
+        background-image: url('/images/logo-store.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+
+        @include mix.screen(m) {
+            background-image: url('/images/logo-full.svg');
+            background-position: center;
+        }
+
+        @include mix.screen(l) {
+            background-position: left;
+            max-width: 300px;
+        }
+    }
+
+    &__payment-methods {
+        position: absolute;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        border: 1px solid var.$background-color;
+        top: 330px;
+        left: 50%;
+        z-index: 1000;
+        width: calc(100% - 4rem);
+
+        transform: translate(-50%);
+
+        @include mix.screen(l) {
+            position: relative;
+            top: unset;
+            left: unset;
+            z-index: unset;
+            padding: 0.3rem 0.6rem;
+            border-color: var.$brand-color;
+            transform: unset;
+            margin: 0 auto;
+            width: min(calc(100% - 4rem), 300px);
+            background-color: var.$background-color;
+        }
+
+        span {
+            color: var.$text-color;
+            width: max-content;
+        }
+
+        &--hidden {
+            display: none;
+
+            @include mix.screen(l) {
+                display: flex;
+            }
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: calc(100% + 2rem);
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 5px;
+        padding: 2rem 1rem;
+        width: calc(100% - 2rem);
+        height: 300px;
+        aspect-ratio: 1;
+        background-color: var.$brand-color;
+
+        list-style: none;
+
+        @include mix.screen(l) {
+            position: relative;
+            top: unset;
+            left: unset;
+            background-color: unset;
+            width: unset;
+            height: unset;
+            aspect-ratio: unset;
+            padding: unset;
+            transform: unset;
+
+            display: flex;
+            gap: 2ch;
+        }
+
+        & a {
+            font-family: var.$font-heading;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: var.$text-color;
+            text-decoration: none;
+
+            @include mix.screen(l) {
+                font-family: var.$font-p;
+                font-size: 1rem;
+                text-transform: unset;
+            }
+        }
+
+        &--hidden {
+            display: none;
+            @include mix.screen(l) {
+                display: flex;
+            }
+        }
+    }
+
+    &__cart {
+        background: none;
+        border: none;
+        background-color: var.$brand-color;
+        width: 42px;
+        aspect-ratio: 1;
+        border-radius: 5px;
+        background-image: url('/images/cart.svg');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+
+        &:hover {
+            background-color: var.$brand-color-hover;
+        }
+    }
 }

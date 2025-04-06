@@ -1,30 +1,29 @@
 {% assign menu = settings.menu.settings %}
 
 <header class='header'>
-    <button type='button' class='header__hamburguer'>
-        <span class='sr-only'>Open menu</span>
-        open menu
-    </button>
+    <div class='header__wrapper'>
+        <button type='button' class='header__hamburguer header__hamburguer'>
+            <span class='sr-only'>Open menu</span>
+        </button>
 
-    <div class='header__logo'>
-        <span class='sr-only'>Shuffle Store</span>
-        Shuffle Store
+        <div class='header__logo'>
+            <span class='sr-only'>Shuffle Store</span>
+        </div>
+
+        {% render 'payment-methods.liquid',
+            class: 'header__payment-methods',
+            text: menu.payment_text
+        %}
+
+        {% render 'links-list.liquid',
+            class: 'header__menu',
+            linksList: menu.links,
+            menuDescription: 'Main menu',
+            case: 'unset'
+        %}
+
+        <button type='button' class='header__cart'>
+            <span class='sr-only'>Open my shopping cart</span>
+        </button>
     </div>
-
-    {% render 'payment-methods.liquid',
-        class: 'header__payment-methods',
-        text: menu.payment_text
-    %}
-
-    {% render 'links-list.liquid',
-        class: 'header__menu',
-        linksList: menu.links,
-        menuDescription: 'Main menu',
-        case: 'unset'
-    %}
-
-    <button type='button' class='header__cart'>
-        <span class='sr-only'>Open my shopping cart</span>
-        cart
-    </button>
 </header>
