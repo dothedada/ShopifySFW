@@ -1,13 +1,5 @@
 {
     "sections": {
-        "featured-products": {
-            "type": "featured-products",
-            "settings": {
-                "heading": "Our Featured Products",
-                "background_color": "#ffffff",
-                "initial_products": 4
-            }
-        },
         "hero-banner": {
             "type": "hero-banner",
             "settings": {
@@ -17,6 +9,21 @@
                 "button_link": "/collections/all",
                 "background_image": "/images/hero_banner_img.avif",
                 "background_image_alt": "Two very relax person wearing a shuffle shirt"
+            }
+        },
+        "featured-products": {
+            "type": "featured-products",
+            "settings": {
+                "heading": "Our Featured Products",
+                "background_color": "#ffffff",
+                "initial_products": 4
+            }
+        },
+        "recent-collections": {
+            "type": "recent-collections",
+            "settings": {
+                "heading": "Latest Collection",
+                "cut_off_date": "2025-01-01"
             }
         },
         "footer": {

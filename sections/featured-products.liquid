@@ -1,9 +1,9 @@
-{% assign settings = settings['featured-products'].settings %}
-{% assign initial_prd = settings.initial_products %}
+{% assign featured = settings['featured-products'].settings %}
+{% assign initial_prd = featured.initial_products %}
 
 <section class='featured'>
-    <h2 class='featured__title'>
-        {{ settings.heading }}
+    <h2 class='featured__title sr-only'>
+        {{ featured.heading }}
     </h2>
 
     <div class='featured__list'>

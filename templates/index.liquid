@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='/styles.css'>
+        <title>Shopify Simulator | Gradiweb</title>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/styles.css">
-	<title>Shopify Simulator | Gradiweb</title>
-</head>
-
-<body>
-	{% include 'top-bar.liquid' %}
-	{% include 'header.liquid' %}
-	{% include 'hero.liquid' %}
-	{% include 'featured-products.liquid' %}
-	<script src="/main.js"></script>
-</body>
-
+    <body>
+        {% include 'top-bar.liquid' %}
+        {% include 'header.liquid' %}
+        {% include 'hero.liquid' %}
+        {% include 'featured-products.liquid' %}
+        {% include 'recent-collections.liquid' %}
+        <script src='/main.js'></script>
+    </body>
 </html>
