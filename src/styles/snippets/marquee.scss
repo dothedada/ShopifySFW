@@ -1,0 +1,60 @@
+@use './../abstracts/variables' as var;
+
+.marquee {
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 5%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(
+            to right,
+            var(--_marquee-bg-color, var.$background-color) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(
+            to left,
+            var(--_marquee-bg-color, var.$background-color) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    &__container {
+        white-space: nowrap;
+        position: relative;
+        display: inline-block;
+    }
+    &__text {
+        width: max-content;
+        position: relative;
+        padding-right: 3ch;
+        margin-right: 0.3rem;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: -5%;
+            right: 0;
+            height: 110%;
+            aspect-ratio: 1;
+
+            background-image: url('/images/star.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

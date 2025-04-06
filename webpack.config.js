@@ -22,7 +22,16 @@ module.exports = (_, argv) => {
                     test: /\.s?css$/,
                     use: [
                         MiniCssExtractPlugin.loader,
-                        'css-loader',
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                url: {
+                                    filter: (url) => {
+                                        return !url.startsWith('/images/');
+                                    },
+                                },
+                            },
+                        },
                         'sass-loader',
                     ],
                 },

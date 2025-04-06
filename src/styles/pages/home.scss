@@ -1,0 +1,8 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+body {
+    font-family: $font-p;
+    background-color: $background-color;
+    color: $text-color;
+}
