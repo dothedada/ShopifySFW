@@ -1,0 +1,7 @@
+{% if tags %}
+    <ul>
+        {% for tag in tags %}
+            <li class='{{class}}'>{{ tag }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

@@ -1,0 +1,19 @@
+<dialog class='product-dialog' data-dialogID='{{product.id}}'>
+    <button class='product-dialog__close-btn' type='button'>
+        <span class='sr-only'>Close</span>X
+    </button>
+    <img src='{{product.image}}' alt=''>
+    <h3 class='product-dialog__name'>{{ product.title }}</h3>
+    <p>{{ product.description }}</p>
+
+    {% render 'product-tags.liquid',
+        tags: product.tags,
+        class: 'product-dialog__tag'
+    %}
+
+    <p class='product-dialog__price'>Price: ${{ product.price }}</p>
+    <button type='button' class='product-dialog__add-btn'>
+        <span class='sr-only'>add to cart</span>
+        cart
+    </button>
+</dialog>

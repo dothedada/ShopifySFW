@@ -1,15 +1,21 @@
 <div class='product-card'>
-    <img src='{{product.image}}' alt='{{product.description}}'>
+    <button
+        class='product-card__info-btn'
+        type='button'
+        data-productID='{{product.id}}'
+    >
+        <span class='sr-only'>View more</span>
+        <img src='{{product.image}}' alt=''>
+    </button>
     <h3 class='product-card__name'>{{ product.title }}</h3>
     <p class='product-card__price'>Price: ${{ product.price }}</p>
-    {% if product.tags %}
-        <ul>
-            {% for tag in product.tags %}
-                <li class='product-card__tag'>{{ tag }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-    <button type='button' class='product-card__add-button'>
+
+    {% render 'product-tags.liquid',
+        tags: product.tags,
+        class: 'product-card__tag'
+    %}
+
+    <button type='button' class='product-card__add-btn'>
         <span class='sr-only'>add to cart</span>
         cart
     </button>
