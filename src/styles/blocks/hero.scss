@@ -2,11 +2,16 @@
 @use './../abstracts/mixins' as mix;
 
 .hero {
-    max-width: var.$max-width;
-
     &__highlight {
-        margin: calc(100px + 1.25rem) 1.25rem 2.5rem;
+        margin: calc(100px + 1.25rem) auto 2.5rem;
+        padding: 0 1.25rem;
         position: relative;
+        max-width: var.$max-width;
+
+        @include mix.screen(l) {
+            margin: calc(100px + 2rem) auto 2.5rem;
+            padding: 0 2rem;
+        }
     }
 
     &__img {
@@ -38,7 +43,7 @@
 
         @include mix.screen(l) {
             left: 0;
-            margin: 2rem 3rem;
+            margin: 2rem 4rem;
             font-size: 2.5rem;
             transform: translate(0, 0);
         }

@@ -9,7 +9,9 @@
 @use 'pages/home';
 
 @use 'snippets/payment-methods';
+@use 'snippets/product-cards.scss';
 
 @use 'blocks/top-bar';
 @use 'blocks/header';
 @use 'blocks/hero';
+@use 'blocks/featured-products';

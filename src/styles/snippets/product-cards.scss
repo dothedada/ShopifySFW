@@ -1,0 +1,85 @@
+@use './../abstracts/variables' as var;
+@use './../abstracts/mixins' as mix;
+
+.product-card {
+    flex: 0 0 230px;
+    margin: 0 0 1.5rem;
+
+    &__info-btn {
+        height: 280px;
+        padding: 4px;
+        border-radius: var.$round-corner;
+        border: none;
+        background: linear-gradient(
+            to right,
+            var.$brand-color-dark 0%,
+            var.$brand-color 50%,
+            var.$brand-color-dark 100%
+        );
+
+        @include mix.screen(l) {
+            height: 400px;
+        }
+
+        > div {
+            overflow: hidden;
+            border: none;
+            width: 100%;
+            height: 100%;
+            border-radius: var.$round-corner;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.4s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__data {
+        margin: 0.5rem 0;
+        display: flex;
+        gap: 0.5rem;
+        align-items: start;
+
+        > div {
+            flex: 1;
+        }
+    }
+
+    &__name {
+        font-family: var.$font-p;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+
+    & ul {
+        display: flex;
+        gap: 1ch;
+        font-size: var.$font-size-s;
+        list-style: none;
+    }
+
+    &__add-btn {
+        background: none;
+        border: none;
+        background-color: var.$brand-color;
+        width: 42px;
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-image: url('/images/cart.svg');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 45% 55%;
+
+        &:hover {
+            background-color: var.$brand-color-hover;
+        }
+    }
+}

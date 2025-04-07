@@ -1,0 +1,57 @@
+@use './../abstracts/variables' as var;
+@use './../abstracts/mixins' as mix;
+
+.featured {
+    max-width: var.$max-width;
+    margin: 0 auto;
+
+    &__list {
+        display: flex;
+        gap: 1.5rem;
+        overflow-x: scroll;
+
+        @include mix.screen(l) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 2rem;
+            gap: 2rem;
+        }
+
+        > *:first-child {
+            margin-left: 1rem;
+            @include mix.screen(l) {
+                margin-left: unset;
+            }
+        }
+        > *:last-child {
+            margin-right: 1rem;
+            @include mix.screen(l) {
+                margin-right: unset;
+            }
+        }
+    }
+
+    &__more-btn {
+        margin: 1.5rem auto;
+        font-family: var.$font-heading;
+        font-size: 2rem;
+        text-decoration: none;
+        border-radius: var.$round-corner;
+        background-color: var.$brand-color;
+        color: var.$text-color;
+        padding: 0.5rem 1.5rem;
+        text-align: center;
+        display: block;
+        border: none;
+        text-transform: uppercase;
+
+        @include mix.screen(l) {
+            margin: 2rem auto;
+            font-size: 2.5rem;
+        }
+
+        &:hover {
+            background-color: var.$brand-color-hover;
+        }
+    }
+}

@@ -5,18 +5,23 @@
         data-productID='{{product.id}}'
     >
         <span class='sr-only'>View more</span>
-        <img src='{{product.image}}' alt=''>
+        <div>
+            <img class='product-card__img' src='{{product.image}}' alt=''>
+        </div>
     </button>
-    <h3 class='product-card__name'>{{ product.title }}</h3>
-    <p class='product-card__price'>Price: ${{ product.price }}</p>
+    <div class='product-card__data'>
+        <div>
+            <h3 class='product-card__name'>{{ product.title }}</h3>
+            <p class='product-card__price'>${{ product.price }} USD</p>
 
-    {% render 'product-tags.liquid',
-        tags: product.tags,
-        class: 'product-card__tag'
-    %}
+            {% render 'product-tags.liquid',
+                tags: product.tags,
+                class: 'product-card__tag'
+            %}
+        </div>
 
-    <button type='button' class='product-card__add-btn'>
-        <span class='sr-only'>add to cart</span>
-        cart
-    </button>
+        <button type='button' class='product-card__add-btn'>
+            <span class='sr-only'>add to cart</span>
+        </button>
+    </div>
 </div>

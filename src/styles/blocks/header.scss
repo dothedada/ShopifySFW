@@ -5,10 +5,11 @@
     position: fixed;
     top: calc(0.8rem + 1rem);
     left: 0;
-    z-index: 999;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
+    isolation: isolate;
+    z-index: 1000;
 
     &__wrapper {
         max-width: var.$max-width;
@@ -99,7 +100,6 @@
         border: 1px solid var.$background-color;
         top: 330px;
         left: 50%;
-        z-index: 1000;
         width: calc(100% - 4rem);
 
         transform: translate(-50%);
@@ -108,7 +108,6 @@
             position: relative;
             top: unset;
             left: unset;
-            z-index: unset;
             padding: 0.3rem 0.6rem;
             border-color: var.$brand-color;
             transform: unset;
@@ -188,7 +187,7 @@
         background-color: var.$brand-color;
         width: 42px;
         aspect-ratio: 1;
-        border-radius: 5px;
+        border-radius: var.$round-corner;
         background-image: url('/images/cart.svg');
         background-size: 25px;
         background-repeat: no-repeat;
