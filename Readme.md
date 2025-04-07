@@ -1,5 +1,25 @@
 # Shopify Simulator Documentation
 
+Hi! to instal, first clone the repo:
+
+```
+git clone git@github.com:dothedada/ShopifySFW.git
+cd ShopifySFW
+```
+
+then, install all the dependencys and buil the project:
+
+```
+npm install
+npm run build
+```
+
+and lastly, launch :)
+
+```
+npm run start
+```
+
 ## Test solution route
 
 - [x] Setup the work environment
@@ -15,30 +35,30 @@
       - [x] template
       - [x] css
       - [x] JS assembly
-    - [ ] marquees
+    - [x] marquees
       - [x] template
       - [x] css
-      - [ ] JS assembly
+      - [x] JS assembly
     - [x] hero
       - [x] template
       - [x] css
-    - [ ] product carrousel
+    - [x] product carrousel
       - [x] template
       - [x] css
-      - [ ] JS assembly
-      - [ ] cards
+      - [x] JS assembly
+      - [x] cards
         - [x] template
         - [x] css
-        - [ ] JS assembly
+        - [x] JS assembly
     - [ ] product detail
       - [x] template
       - [ ] css
       - [ ] JS assembly
-  - [ ] Section
+  - [x] Section
     - [x] header
       - [X] template
       - [x] css
-    - [ ] products
+    - [x] products
       - [x] template
       - [x] css
     - [x] collections

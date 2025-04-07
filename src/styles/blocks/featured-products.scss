@@ -32,22 +32,22 @@
     }
 
     &__more-btn {
-        margin: 1.5rem auto;
-        font-family: var.$font-heading;
-        font-size: 2rem;
-        text-decoration: none;
-        border-radius: var.$round-corner;
-        background-color: var.$brand-color;
-        color: var.$text-color;
-        padding: 0.5rem 1.5rem;
-        text-align: center;
-        display: block;
-        border: none;
-        text-transform: uppercase;
+        display: none;
 
         @include mix.screen(l) {
+            display: block;
+            padding: 0.5rem 1.5rem;
             margin: 2rem auto;
+            border: none;
+            border-radius: var.$round-corner;
+            font-family: var.$font-heading;
             font-size: 2.5rem;
+            font-size: 2rem;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: var.$brand-color;
+            color: var.$text-color;
         }
 
         &:hover {

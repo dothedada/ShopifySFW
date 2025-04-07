@@ -14,7 +14,7 @@
     },
     "scripts": {
         "dev": "NODE_ENV=development node server.js",
-        "build": "webpack --mode production && NODE_ENV=production node server.js",
+        "build": "webpack --mode production",
         "start": "node server.js"
     },
     "keywords": [
