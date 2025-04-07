@@ -24,11 +24,11 @@
       - [ ] css
     - [ ] product carrousel
       - [x] template
-      - [ ] css
+      - [x] css
       - [ ] JS assembly
       - [ ] cards
         - [x] template
-        - [ ] css
+        - [x] css
         - [ ] JS assembly
     - [ ] product detail
       - [x] template
@@ -37,10 +37,10 @@
   - [ ] Section
     - [ ] header
       - [X] template
-      - [ ] css
+      - [x] css
     - [ ] products
       - [x] template
-      - [ ] css
+      - [x] css
     - [ ] collections
       - [x] template
       - [ ] css

@@ -2,9 +2,11 @@
 
 <section class='collections'>
     <h2 class='collections__title'>{{ collectionsData.heading }}</h2>
-    {%- for collection in collections -%}
-        {% if collection.created_at > collectionsData.cut_off_date %}
-            {% render 'collection-card.liquid', collection: collection %}
-        {% endif %}
-    {%- endfor -%}
+    <div class='collections__cards'>
+        {%- for collection in collections -%}
+            {% if collection.created_at > collectionsData.cut_off_date %}
+                {% render 'collection-card.liquid', collection: collection %}
+            {% endif %}
+        {%- endfor -%}
+    </div>
 </section>

@@ -1,0 +1,66 @@
+@use './../abstracts/variables' as var;
+@use './../abstracts/mixins' as mix;
+
+.collections {
+    max-width: var.$max-width;
+    margin: 3rem auto 0;
+    padding: 1rem;
+    background-image: url('/images/bg-circle.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    @include mix.screen(l) {
+        padding: 0 2rem;
+    }
+
+    &__title {
+        margin: 2rem auto;
+        text-align: center;
+        padding: 0 3rem;
+        position: relative;
+
+        @include mix.screen(m) {
+            max-width: max-content;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 4rem;
+            aspect-ratio: 1;
+            top: 1rem;
+            left: 0;
+            background-image: url('/images/star.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @include mix.screen(m) {
+                transform: translate(-130%);
+            }
+        }
+        &::after {
+            left: unset;
+            right: 0;
+            @include mix.screen(m) {
+                transform: translate(130%);
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        @include mix.screen(m) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include mix.screen(l) {
+            gap: 2rem;
+        }
+    }
+}
