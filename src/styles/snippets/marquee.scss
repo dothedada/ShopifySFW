@@ -38,13 +38,14 @@
     &__container {
         white-space: nowrap;
         position: relative;
-        display: inline-block;
+        display: flex;
+        animation: marquee-loop 10s linear infinite;
     }
+
     &__text {
         width: max-content;
         position: relative;
-        padding-right: 3ch;
-        margin-right: 0.3rem;
+        padding: 0 4ch 0 1ch;
 
         &::after {
             position: absolute;

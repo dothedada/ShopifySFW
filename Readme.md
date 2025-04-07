@@ -11,17 +11,17 @@
   - [x] Download the other assets (Fonts, icons, ...)
 - [ ] Make the views
   - [ ] components
-    - [ ] Menu
+    - [x] Menu
       - [x] template
       - [x] css
-      - [ ] JS assembly
+      - [x] JS assembly
     - [ ] marquees
       - [x] template
       - [x] css
       - [ ] JS assembly
-    - [ ] hero
+    - [x] hero
       - [x] template
-      - [ ] css
+      - [x] css
     - [ ] product carrousel
       - [x] template
       - [x] css
