@@ -35,18 +35,18 @@
       - [ ] css
       - [ ] JS assembly
   - [ ] Section
-    - [ ] header
+    - [x] header
       - [X] template
       - [x] css
     - [ ] products
       - [x] template
       - [x] css
-    - [ ] collections
+    - [x] collections
       - [x] template
-      - [ ] css
-    - [ ] footer
+      - [x] css
+    - [x] footer
       - [x] template
-      - [ ] css
+      - [x] css
 - [ ] landing, final assembly
 - [ ] tests
 

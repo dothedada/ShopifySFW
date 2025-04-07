@@ -14,7 +14,7 @@ html {
 :has(:target) {
     // Smooth scrool
     scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
+    scroll-padding-top: 4rem;
 }
 
 *:not(dialog),

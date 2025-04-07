@@ -1,12 +1,7 @@
 {% assign footer = settings.footer.settings %}
 
 <footer class='footer'>
-    <div class='footer__store'>
-        <img src='' alt='Shuffle Store' class='footer__store-logo'>
-        <p>{{ footer.logo_text }}</p>
-    </div>
-
-    <div>
+    <div class='footer__menu'>
         {% render 'links-list.liquid',
             class: 'footer__links',
             linksList: footer.links,
@@ -15,32 +10,44 @@
 
         {% render 'links-list.liquid',
             class: 'footer__tos',
-            linksList: footer['links-tos'],
+            linksList: footer.links_tos,
             linksDescription: 'Store policies'
         %}
+    </div>
 
+    <div class='footer__payment'>
         {% render 'payment-methods.liquid',
             class: 'footer__payment-methods',
             text: footer.payment_text
         %}
     </div>
 
-    <div class='footer__contact'>
+    <div class='footer__subscribe'>
         <form class='footer__newsletter'>
             <label>
                 Subscribe and receive drop notifications
-                <input type='email'>
+                <input type='email' placeholder='Enter Email'>
             </label>
             <button type='button'>
                 <span class='sr-only'>Subscribe</span>
-                subscribe
             </button>
         </form>
+    </div>
 
+    <div class='footer__brand'>
+        <span class='footer__logo'></span>
+        <p class='footer__logo-text'>{{ footer.logo_text }}</p>
+    </div>
+
+    <div class='footer__contact'>
         {% render 'links-list.liquid',
             class: 'footer__socials',
             linksList: footer.socials,
             linksDescription: 'Socials'
         %}
+    </div>
+
+    <div class='footer__legal'>
+        <p>{{ footer.legal }}</p>
     </div>
 </footer>

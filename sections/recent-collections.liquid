@@ -1,6 +1,6 @@
 {% assign collectionsData = settings['recent-collections'].settings %}
 
-<section class='collections'>
+<section class='collections' id='collections'>
     <h2 class='collections__title'>{{ collectionsData.heading }}</h2>
     <div class='collections__cards'>
         {%- for collection in collections -%}

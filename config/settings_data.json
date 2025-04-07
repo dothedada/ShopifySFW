@@ -5,8 +5,8 @@
             "settings": {
                 "payment_text": "We Accept",
                 "links": [
-                    { "label": "All Products", "url": "/collections/all" },
-                    { "label": "Collections", "url": "/collections" }
+                    { "label": "All Products", "url": "#featured" },
+                    { "label": "Collections", "url": "#collections" }
                 ]
             }
         },
@@ -41,6 +41,7 @@
             "settings": {
                 "logo_text": "MyShopify",
                 "payment_text": "We accept all major cards, PayPal & crypto",
+                "legal": "© 2024, Shuffle.store Operated by Studio Plaid. Need help? Email support@shuffle.store",
                 "links": [
                     { "label": "Home", "url": "/" },
                     { "label": "Cart", "url": "/cart" },
