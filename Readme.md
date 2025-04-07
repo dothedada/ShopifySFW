@@ -7,18 +7,17 @@ git clone git@github.com:dothedada/ShopifySFW.git
 cd ShopifySFW
 ```
 
-then, install all the dependencys and buil the project:
+then, install all the dependencys, buil and run the site:
 
 ```
 npm install
 npm run build
-```
-
-and lastly, launch :)
-
-```
 npm run start
 ```
+
+Now yo can open the site on (your machine)[http://localhost:3000/]
+
+:)
 
 ## Test solution route
 
@@ -67,8 +66,8 @@ npm run start
     - [x] footer
       - [x] template
       - [x] css
-- [ ] landing, final assembly
-- [ ] tests
+- [x] landing, final assembly
+- [x] tests
 
 ## Original data
 
