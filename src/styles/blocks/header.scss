@@ -42,7 +42,7 @@
             left: 50%;
             height: 3px;
             background-color: var.$brand-color;
-            transition: transform 1s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
 
         &::before {
@@ -99,9 +99,11 @@
         border: 1px solid var.$background-color;
         top: 330px;
         left: 50%;
-        width: calc(100% - 4rem);
+        width: calc(100% - 6rem);
+        z-index: 1;
 
-        transform: translate(-50%);
+        transform: translate(-50%, 100vh);
+        transition: transform 0.3s ease-out 0.3s;
 
         @include mix.screen(l) {
             position: relative;
@@ -120,11 +122,11 @@
             width: max-content;
         }
 
-        &--hidden {
-            display: none;
+        &--open {
+            transform: translate(-50%, 100vh);
 
             @include mix.screen(l) {
-                display: flex;
+                transform: unset;
             }
         }
     }
@@ -133,13 +135,14 @@
         position: absolute;
         top: calc(100% + 2rem);
         left: 50%;
-        transform: translate(-50%, 0);
         border-radius: var.$round-corner;
-        padding: 2rem 1rem;
-        width: calc(100% - 2rem);
+        padding: 3rem 3rem;
+        width: calc(100% - 4rem);
         height: 300px;
         aspect-ratio: 1;
         background-color: var.$brand-color;
+        transform: translate(-50%, 100vh);
+        transition: transform 0.3s ease-out 0.1s;
 
         list-style: none;
 
@@ -172,10 +175,11 @@
             }
         }
 
-        &--hidden {
-            display: none;
+        &--open {
+            transform: translate(-50%, 0);
+
             @include mix.screen(l) {
-                display: flex;
+                transform: unset;
             }
         }
     }

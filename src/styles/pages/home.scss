@@ -7,3 +7,30 @@ body {
     background-image: url('/images/bg-noise.webp');
     color: var.$text-color;
 }
+
+.block {
+    overflow: hidden;
+
+    @include mix.screen(l) {
+        overflow: unset;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    top: 0;
+    transform: translateY(-100vh);
+    transition: transform 0.3s ease-out;
+
+    &--open {
+        transform: translateY(0);
+
+        @include mix.screen(l) {
+            display: none;
+        }
+    }
+}

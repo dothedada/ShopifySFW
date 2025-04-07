@@ -2,7 +2,7 @@
 
 <header class='header'>
     <div class='header__wrapper'>
-        <button type='button' class='header__hamburguer header__hamburguer'>
+        <button type='button' class='header__hamburguer'>
             <span class='sr-only'>Open menu</span>
         </button>
 
@@ -11,12 +11,12 @@
         </div>
 
         {% render 'payment-methods.liquid',
-            class: 'header__payment-methods header__payment-methods--hidden',
+            class: 'header__payment-methods',
             text: menu.payment_text
         %}
 
         {% render 'links-list.liquid',
-            class: 'header__menu header__menu--hidden',
+            class: 'header__menu',
             linksList: menu.links,
             menuDescription: 'Main menu',
             case: 'unset'
