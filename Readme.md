@@ -15,7 +15,7 @@ npm run build
 npm run start
 ```
 
-Now yo can open the site on (your machine)[http://localhost:3000/]
+Now yo can open the site on [your machine](http://localhost:3000/)
 
 :)
 
